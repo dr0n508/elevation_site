@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.btn-register {
+  background-image: linear-gradient(to right, #5a9dea 0%, #125697 100%);
+  padding: 16px 28px;
+  color: white;
+}
+
+.btn-login {
+  font-size: 14px;
+  color: #999999;
+  padding: 14px 28px;
+  border: solid 2px rgba(9,153,153,.6);
+}
+
+.cta-btn {
+  color: white;
+  background-image: linear-gradient(to top, #ff9845 0%, #ffb134 100%);
+  padding: 20px 40px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.btn-regular {
+  color: white;
+  padding: 18px 40px;
+  border: solid 2px white;
+  border-radius: 6px;
+}
