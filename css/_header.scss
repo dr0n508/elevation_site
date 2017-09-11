@@ -22,7 +22,12 @@ header {
   opacity: 1;
   @include small {
     .nav {
-      display: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      overflow: hidden;
+      padding: 0;
+      //display: none;
+      height: 1px;
     }
   }
 }
@@ -31,11 +36,28 @@ header {
 .open-nav {
   display: block;
   .mobile-toggle {
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
+    span {
+      &:nth-child(1) {
+        position: relative;
+        top: 4px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      &:nth-child(2) {
+        position: relative;
+        display: none;
+      }
+      &:nth-child(3) {
+        position: relative;
+        top: -5px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+    }
   }
   .nav {
-    display: block;
+    padding: 20px;
+    height: 438px;
   }
 }
 
@@ -120,11 +142,14 @@ header {
   }
   span {
     width: 30px;
-    height: 4px;
+    height: 3px;
     margin-bottom: 6px;
     border-radius: 1000px;
     display: block;
-    background-color: gainsboro;
+    background-color: #414141;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
     &:last-child {
       margin-bottom: 0;
     }

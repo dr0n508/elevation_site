@@ -77,15 +77,30 @@ header {
   opacity: 1; }
   @media only screen and (max-width: 992px) {
     header .nav {
-      display: none; } }
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      overflow: hidden;
+      padding: 0;
+      height: 1px; } }
 
 .open-nav {
   display: block; }
-  .open-nav .mobile-toggle {
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg); }
+  .open-nav .mobile-toggle span:nth-child(1) {
+    position: relative;
+    top: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); }
+  .open-nav .mobile-toggle span:nth-child(2) {
+    position: relative;
+    display: none; }
+  .open-nav .mobile-toggle span:nth-child(3) {
+    position: relative;
+    top: -5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); }
   .open-nav .nav {
-    display: block; }
+    padding: 20px;
+    height: 438px; }
 
 .nav {
   display: flex;
@@ -155,11 +170,14 @@ header {
       display: block; } }
   .mobile-toggle span {
     width: 30px;
-    height: 4px;
+    height: 3px;
     margin-bottom: 6px;
     border-radius: 1000px;
     display: block;
-    background-color: gainsboro; }
+    background-color: #414141;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in; }
     .mobile-toggle span:last-child {
       margin-bottom: 0; }
 
