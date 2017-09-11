@@ -579,7 +579,9 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
   .our-brands .list-brands li {
     display: block;
     width: 12.5%;
@@ -626,7 +628,9 @@ footer {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  margin-left: -10px;
+  margin-right: -10px; }
   .gadgets-and-tech .list-gadgets li {
     display: block;
     width: 33.33%;
