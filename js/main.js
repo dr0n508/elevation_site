@@ -49,7 +49,12 @@ $(document).ready(function () {
                 items:1
             }
         }
-    })
+    });
+
+
+    $('.list-brands li .wrap').height( $('.list-brands li .wrap').width() );
+
+
 
 
 
