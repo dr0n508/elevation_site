@@ -52,7 +52,7 @@ $(document).ready(function () {
     });
 
 
-    $('.list-brands li .wrap').height( $('.list-brands li .wrap').width() );
+    $('.list-brands li').height( $('.list-brands li').width() );
 
 
 

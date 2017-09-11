@@ -583,26 +583,27 @@ footer {
   .our-brands .list-brands li {
     padding: 15px;
     width: 12.5%; }
-    .our-brands .list-brands li .wrap {
+    .our-brands .list-brands li a {
       border: solid 1px #bbbbbb;
-      border-radius: 4px; }
-      .our-brands .list-brands li .wrap a {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-      .our-brands .list-brands li .wrap img {
-        max-width: 90%;
-        height: auto; }
+      border-radius: 4px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .our-brands .list-brands li img {
+      max-width: 90%;
+      height: auto; }
   @media all and (max-width: 992px) {
     .our-brands .list-brands li {
       width: 16.66%;
       padding: 10px; } }
   @media all and (max-width: 768px) {
-    .our-brands .list-brands li {
-      width: 25%;
-      padding: 10px; } }
+    .our-brands .list-brands {
+      padding: 35px 0; }
+      .our-brands .list-brands li {
+        width: 25%;
+        padding: 10px; } }
   @media all and (max-width: 450px) {
     .our-brands .list-brands li {
       width: 33.33%;
