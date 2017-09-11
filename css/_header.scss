@@ -33,6 +33,26 @@ header {
 }
 
 
+.wrap-btn-language {
+  margin-top: 30px;
+  border: solid 1px white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  a {
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    padding: 7px 10px;
+    text-decoration: none;
+    float: left;
+  }
+  a.active {
+    color: #2f2c3a;
+    background-color: white;
+  }
+}
+
 .open-nav {
   display: block;
   .mobile-toggle {
