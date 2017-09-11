@@ -58,17 +58,17 @@
   .col-1-4:nth-child(2n) {
     padding-right: 0; } }
 .main_h {
-  position: relative;
-  max-height: 70px;
+  padding: 10px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
   z-index: 999;
   width: 100%;
-  padding: 20px;
   overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 1;
-  top: 0;
   font-family: "Montserrat", sans-serif; }
   @media only screen and (max-width: 768px) {
     .main_h {
@@ -80,57 +80,54 @@
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg); }
 
-.sticky {
-  background-color: rgba(255, 255, 255, 0.93);
-  opacity: 1;
-  top: 0px;
-  border-bottom: 1px solid gainsboro; }
-
 .logo {
-  width: 50px;
-  font-size: 25px;
-  color: #8f8f8f;
-  text-transform: uppercase;
-  float: left;
-  display: block;
-  margin-top: 0;
-  line-height: 1;
-  margin-bottom: 10px; }
-  @media only screen and (max-width: 768px) {
-    .logo {
-      float: none; } }
+  display: inline-block; }
+  .logo img {
+    float: left; }
 
-nav {
-  float: right;
-  width: 60%; }
+@media only screen and (max-width: 768px) {
+  nav {
+    width: 100%; } }
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right; }
   @media only screen and (max-width: 768px) {
-    nav {
+    nav ul {
+      padding-top: 10px;
+      margin-bottom: 22px;
+      text-align: center;
       width: 100%; } }
-  nav ul {
-    list-style: none;
-    overflow: hidden;
-    text-align: right;
-    float: right; }
+  nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5; }
     @media only screen and (max-width: 768px) {
-      nav ul {
-        padding-top: 10px;
-        margin-bottom: 22px;
-        float: left;
-        text-align: center;
-        width: 100%; } }
-    nav ul li {
-      display: inline-block;
-      margin-left: 35px;
-      line-height: 1.5; }
-      @media only screen and (max-width: 768px) {
-        nav ul li {
-          width: 100%;
-          padding: 7px 0;
-          margin: 0; } }
-    nav ul a {
-      color: #888888;
-      text-transform: uppercase;
-      font-size: 12px; }
+      nav ul li {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0; } }
+  nav ul a {
+    color: #444444;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600; }
+  nav ul a.active {
+    color: #5a9dea; }
+
+.sign-nav .btn {
+  margin-left: 20px; }
+.sign-nav form {
+  display: inline-block; }
+  .sign-nav form select {
+    border: none;
+    font-size: 14px;
+    color: #429fcb;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none; }
 
 .mobile-toggle {
   display: none;
@@ -172,13 +169,13 @@ nav {
 
 .btn-register {
   background-image: linear-gradient(to right, #5a9dea 0%, #125697 100%);
-  padding: 16px 28px;
+  padding: 11px 28px;
   color: white; }
 
 .btn-login {
   font-size: 14px;
   color: #999999;
-  padding: 14px 28px;
+  padding: 9px 28px;
   border: solid 2px rgba(9, 153, 153, 0.6); }
 
 .cta-btn {
