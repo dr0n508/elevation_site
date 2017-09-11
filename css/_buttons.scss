@@ -37,3 +37,19 @@
   border: solid 2px white;
   border-radius: 6px;
 }
+
+@media all and ( max-width: 992px ) {
+  .btn {
+    font-size: 12px;
+    margin-bottom: 25px;
+    width: 158px;
+    text-align: center;
+
+  }
+  .cta-btn {
+    padding: 15px;
+  }
+  .btn-regular {
+    padding: 13px;
+  }
+}
