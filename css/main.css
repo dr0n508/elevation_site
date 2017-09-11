@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic,cyrillic-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800");
 .container {
   width: 100%;
@@ -223,12 +223,17 @@ body {
     margin-bottom: 30px; }
   .section p {
     margin-bottom: 45px; }
+  .section .btn {
+    margin-right: 20px; }
 
 .section.center {
   text-align: center; }
 
 .section.right {
   text-align: right; }
+  .section.right .btn {
+    margin-right: 0;
+    margin-left: 20px; }
 
 .section.left {
   text-align: left; }
@@ -281,18 +286,20 @@ body {
   background-size: cover; }
 
 .shop-tech-toys {
-  background-color: #57cdd7; }
+  background: url("../img/anim-bg2.png") no-repeat 5% 50%, url("../img/anim-bg3.png") no-repeat 95% 50%, #57cdd7; }
 
 .gym-ready-accessories {
   background: linear-gradient(rgba(65, 65, 65, 0.3), rgba(65, 65, 65, 0.3)), url("../img/gym-bg.png") no-repeat 50% 50%;
   background-size: cover; }
 
 .bluetooth-speakers {
-  background-color: #726bff; }
+  background: url("../img/anim-bg2.png") no-repeat 95% 50%, url("../img/anim-bg3.png") no-repeat 5% 50%, #726bff; }
 
 .awesome-gadgets {
   background: linear-gradient(rgba(65, 65, 65, 0.3), rgba(65, 65, 65, 0.3)), url("../img/gadgets-bg.png") no-repeat 50% 50%;
   background-size: cover; }
+  .awesome-gadgets h2 span {
+    display: block; }
 
 .stay-updated {
   background-color: #f2f2f2; }
@@ -301,32 +308,56 @@ body {
 
 .contact {
   background: url("../img/contact-bg.png"), #726bff; }
-  .contact .container {
-    display: flex; }
-    .contact .container ul {
-      display: flex;
-      justify-content: space-between; }
+  .contact .cta-text-contact {
+    padding-right: 25%; }
+  .contact .contact-list {
+    list-style: none; }
+    .contact .contact-list li {
+      padding-top: 80px; }
+    .contact .contact-list h3 {
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 20px; }
+    .contact .contact-list .email,
+    .contact .contact-list .phone {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 300; }
+  .contact .contact-kazachstan {
+    background: url("../img/clock-kazachstan.png") 0 0 no-repeat; }
+  .contact .contact-ukraine {
+    background: url("../img/clock-ukraine.png") 0 0 no-repeat; }
+  .contact .contact-russia {
+    background: url("../img/clock-russia.png") 0 0 no-repeat; }
 
 form .wrap-input {
   width: 545px;
+  height: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: white;
   border-radius: 10px;
-  border-top: solid 1px rgba(68, 68, 68, 0.7);
-  border-left: solid 1px rgba(68, 68, 68, 0.7);
-  border-bottom: solid 1px rgba(68, 68, 68, 0.7); }
+  margin: 0 auto; }
   form .wrap-input .border {
-    height: 100%;
-    width: 100%; }
+    height: 50px;
+    width: 100%;
+    border-top: solid 1px rgba(68, 68, 68, 0.7);
+    border-left: solid 1px rgba(68, 68, 68, 0.7);
+    border-bottom: solid 1px rgba(68, 68, 68, 0.7);
+    border-radius: 10px 0 0 10px;
+    overflow: hidden; }
   form .wrap-input input {
+    height: 100%;
     font-size: 18px;
     outline: none;
     border: none;
     width: 100%;
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    background-color: #f2f2f2; }
   form .wrap-input .cta-btn {
+    height: 50px;
+    padding: 16px 40px;
     border-radius: 0 10px 10px 0; }
 
 footer {
@@ -334,6 +365,7 @@ footer {
   text-align: center;
   padding: 30px 0; }
   footer p {
+    font-size: 13px;
     color: rgba(255, 255, 255, 0.35); }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
