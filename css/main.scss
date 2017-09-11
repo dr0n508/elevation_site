@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800');
+@import '_grid.scss';
+
 @import '_header.scss';
+@import '_buttons.scss';
+
 
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
   padding: 0;
@@ -29,10 +33,10 @@ body {
   color: white;
 }
 
-.container {
-  width: 1170px;
-  margin: 0 auto;
-}
+//.container {
+//  width: 1170px;
+//  margin: 0 auto;
+//}
 
 .section {
   padding: 70px 0;
@@ -72,58 +76,58 @@ $contact-bg-color: #0f4166;
 
 
 //////
-.btn-register {
-  display: inline-block;
-  background-image: linear-gradient(to right, #5a9dea 0%, #125697 100%);
-  padding: 16px 28px;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-}
-
-.btn-login {
-  font-size: 14px;
-  color: #999999;
-  padding: 14px 28px;
-  border: solid 2px rgba(9,153,153,.6);
-  text-transform: uppercase;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-}
-
-
-.cta-btn {
-  font-size: 14px;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-  background-image: linear-gradient(to top, #ff9845 0%, #ffb134 100%);
-  text-decoration: none;
-  display: inline-block;
-  padding: 20px 40px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-}
-
-.btn-regular {
-  display: inline-block;
-  font-size: 14px;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding: 18px 40px;
-
-  border: solid 2px white;
-  border-radius: 6px;
-}
+//.btn-register {
+//  display: inline-block;
+//  background-image: linear-gradient(to right, #5a9dea 0%, #125697 100%);
+//  padding: 16px 28px;
+//  text-transform: uppercase;
+//  color: white;
+//  text-decoration: none;
+//  border-radius: 6px;
+//  font-weight: 600;
+//  font-family: 'Open Sans', sans-serif;
+//  font-size: 14px;
+//}
+//
+//.btn-login {
+//  font-size: 14px;
+//  color: #999999;
+//  padding: 14px 28px;
+//  border: solid 2px rgba(9,153,153,.6);
+//  text-transform: uppercase;
+//  border-radius: 6px;
+//  text-decoration: none;
+//  font-weight: 600;
+//  font-family: 'Open Sans', sans-serif;
+//}
+//
+//
+//.cta-btn {
+//  font-size: 14px;
+//  font-weight: 700;
+//  color: white;
+//  text-transform: uppercase;
+//  background-image: linear-gradient(to top, #ff9845 0%, #ffb134 100%);
+//  text-decoration: none;
+//  display: inline-block;
+//  padding: 20px 40px;
+//  border-radius: 6px;
+//  border: none;
+//  outline: none;
+//}
+//
+//.btn-regular {
+//  display: inline-block;
+//  font-size: 14px;
+//  color: white;
+//  text-decoration: none;
+//  text-transform: uppercase;
+//  font-weight: 700;
+//  padding: 18px 40px;
+//
+//  border: solid 2px white;
+//  border-radius: 6px;
+//}
 
 
 .welcome-banner {
@@ -144,9 +148,15 @@ $contact-bg-color: #0f4166;
   }
 }
 
+.become-reseller {
+  background: url("../img/money.png") no-repeat 100% 100%, $green-color;
+}
+
+.sell-your-product {
+  background: url("../img/euro.png") no-repeat 100% 100%, $blue-color;
+}
+
 .card {
-  background-color: #57cdd7;
-  width: 50%;
   margin-bottom: 20px;
   padding: 45px 30px;
   border-radius: 12px;
