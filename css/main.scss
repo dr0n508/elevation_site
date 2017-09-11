@@ -381,23 +381,28 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     li {
-      padding: 15px;
+      display: block;
       width: 12.5%;
+      margin: 0 auto;
+      padding: 15px;
       a {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50%;
+        padding-bottom: 50%;
         border: solid 1px #bbbbbb;
         border-radius: 4px;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        position: relative;
       }
       img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         max-width: 90%;
         height: auto;
       }
-
-
     }
     @media all and ( max-width: 992px ) {
       li {
