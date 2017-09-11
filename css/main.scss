@@ -169,6 +169,7 @@ $contact-bg-color: #0f4166;
     margin-bottom: 35px;
   }
   @media all and ( max-width: 992px ) {
+    padding: 45px 30px 25px;
     h2 {
       font-size: 22px;
       line-height: 34px;
@@ -286,6 +287,7 @@ $contact-bg-color: #0f4166;
     }
     .email,
     .phone{
+      display: block;
       color: rgba(255,255,255,.6);
       text-decoration: none;
       font-size: 13px;
@@ -300,6 +302,21 @@ $contact-bg-color: #0f4166;
   }
   .contact-russia {
     background: url("../img/clock-russia.png") 0 0 no-repeat;
+  }
+  @media all and ( max-width: 992px ) {
+    .cta-text-contact {
+      padding-right: 0;
+    }
+    .contact-list {
+      h3, .email, .phone {
+        text-align: center;
+      }
+      .contact-kazachstan,
+      .contact-ukraine,
+      .contact-russia {
+        background-position: 50% 0 ;
+      }
+    }
   }
 }
 
