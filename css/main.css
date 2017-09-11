@@ -623,7 +623,14 @@ footer {
   font-size: 40px;
   font-weight: 600;
   color: #414141; }
-.gadgets-and-tech .list-gadgets {
+.gadgets-and-tech .description-gadgets {
+  padding: 50px 200px;
+  border-top: solid 2px #eeeeee;
+  border-bottom: solid 2px #eeeeee;
+  font-size: 16px;
+  color: #414141; }
+
+.list-gadgets {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -631,30 +638,27 @@ footer {
   margin-bottom: 80px;
   margin-left: -10px;
   margin-right: -10px; }
-  .gadgets-and-tech .list-gadgets li {
+  .list-gadgets li {
     display: block;
     width: 33.33%;
     margin: 0 auto;
     padding: 10px; }
-    .gadgets-and-tech .list-gadgets li a {
+    .list-gadgets li a {
       display: block;
       margin-left: auto;
       margin-right: auto;
       padding-top: 50%;
       padding-bottom: 50%;
       position: relative; }
-    .gadgets-and-tech .list-gadgets li img {
+    .list-gadgets li img {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
       height: auto; }
-.gadgets-and-tech .description-gadgets {
-  padding: 50px 200px;
-  border-top: solid 2px #eeeeee;
-  border-bottom: solid 2px #eeeeee;
-  font-size: 16px;
+
+.our-company article {
   color: #414141; }
 
 /*# sourceMappingURL=main.css.map */
