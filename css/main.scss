@@ -304,6 +304,9 @@ $contact-bg-color: #0f4166;
     background: url("../img/clock-russia.png") 0 0 no-repeat;
   }
   @media all and ( max-width: 992px ) {
+    .col-1-2 {
+      width: 100%;
+    }
     .cta-text-contact {
       padding-right: 0;
     }
@@ -316,6 +319,19 @@ $contact-bg-color: #0f4166;
       .contact-russia {
         background-position: 50% 0 ;
       }
+    }
+  }
+  @media all and ( max-width: 768px ) {
+    padding: 60px 0 0;
+    .contact-list {
+      .contact-kazachstan,
+      .contact-ukraine,
+      .contact-russia {
+        margin-bottom: 40px;
+      }
+    }
+    .offset-small {
+      margin-left: 25%;
     }
   }
 }
