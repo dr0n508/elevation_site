@@ -242,6 +242,7 @@ $contact-bg-color: #0f4166;
         width: 100%;
         padding: 10px 20px;
         background-color: #f2f2f2;
+        font-family: 'Open Sans', sans-serif;
       }
       .cta-btn {
         height: 50px;
@@ -504,7 +505,7 @@ footer {
 //
 .our-company {
   .wrap-content {
-    padding: 80px 0;
+    //padding: 80px 0;
     .container {
       max-width: 680px;
     }
@@ -598,7 +599,7 @@ footer {
   @media only screen and (max-width: 768px) {
     .wrap-content {
       background-color: #f4f6f9;
-      padding: 40px 0;
+      //padding: 40px 0;
       h2 {
         margin-bottom: 20px;
       }
