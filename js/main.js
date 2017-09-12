@@ -15,8 +15,6 @@ $(document).ready(function () {
         $list.css("height", height);
     }
 
-
-
 // Mobile Navigation
     $('.mobile-toggle').click(function() {
         if ($('header').hasClass('open-nav')) {
@@ -28,16 +26,17 @@ $(document).ready(function () {
 
     $('.main_h li a').click(function() {
         if ($('header').hasClass('open-nav')) {
-            $('.navigation').removeClass('open-nav');
             $('header').removeClass('open-nav');
         }
     });
 
+//carousel
 
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         nav:false,
+        autoplay: true,
         responsive:{
             0:{
                 items:1
@@ -50,18 +49,6 @@ $(document).ready(function () {
             }
         }
     });
-
-
-    // $('.list-brands li').height( $('.list-brands li').width() );
-
-
-
-
-
-
-
-
-
 
 
 

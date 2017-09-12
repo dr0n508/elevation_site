@@ -83,42 +83,6 @@ header {
       padding: 0;
       height: 1px; } }
 
-.wrap-btn-language {
-  margin-top: 30px;
-  border: solid 1px white;
-  border-radius: 5px;
-  overflow: hidden;
-  display: inline-block; }
-  .wrap-btn-language a {
-    color: white;
-    display: inline-block;
-    font-size: 14px;
-    padding: 7px 10px;
-    text-decoration: none;
-    float: left; }
-  .wrap-btn-language a.active {
-    color: #2f2c3a;
-    background-color: white; }
-
-.open-nav {
-  display: block; }
-  .open-nav .mobile-toggle span:nth-child(1) {
-    position: relative;
-    top: 4px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg); }
-  .open-nav .mobile-toggle span:nth-child(2) {
-    position: relative;
-    display: none; }
-  .open-nav .mobile-toggle span:nth-child(3) {
-    position: relative;
-    top: -5px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg); }
-  .open-nav .nav {
-    padding: 20px;
-    height: 438px; }
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -198,6 +162,54 @@ header {
     .mobile-toggle span:last-child {
       margin-bottom: 0; }
 
+.wrap-btn-language {
+  border: solid 1px white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block; }
+  .wrap-btn-language a {
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    padding: 7px 10px;
+    text-decoration: none;
+    float: left; }
+  .wrap-btn-language a.active {
+    color: #2f2c3a;
+    background-color: white; }
+
+.open-nav {
+  display: block; }
+  .open-nav .mobile-toggle span:nth-child(1) {
+    position: relative;
+    top: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); }
+  .open-nav .mobile-toggle span:nth-child(2) {
+    position: relative;
+    display: none; }
+  .open-nav .mobile-toggle span:nth-child(3) {
+    position: relative;
+    top: -5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); }
+  .open-nav .nav {
+    padding: 20px;
+    height: 500px; }
+
+.show-mobile {
+  display: none;
+  text-align: center; }
+  @media only screen and (max-width: 992px) {
+    .show-mobile {
+      display: block !important; } }
+
+.hide-mobile {
+  display: block; }
+  @media only screen and (max-width: 992px) {
+    .hide-mobile {
+      display: none !important; } }
+
 @media only screen and (max-width: 1680px) {
   .sign-nav {
     margin-left: 100px; } }
@@ -266,15 +278,23 @@ header {
         display: block;
         margin-left: 0;
         border: none;
-        margin-bottom: 20px; }
+        margin-bottom: 15px; }
       .nav .sign-nav .btn-login {
         width: 100%;
+        font-size: 14px;
         background-color: white;
         text-align: center; }
       .nav .sign-nav .btn-register {
+        font-size: 14px;
         width: 100%;
         background: #429fcb;
         text-align: center; } }
+@media only screen and (max-width: 450px) {
+  .show-mobile {
+    text-align: left; }
+
+  .main-nav ul li {
+    text-align: left; } }
 .btn {
   display: inline-block;
   text-transform: uppercase;
