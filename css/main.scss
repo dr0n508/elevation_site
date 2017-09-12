@@ -223,11 +223,8 @@ $contact-bg-color: #0f4166;
       display: flex;
       justify-content: center;
       align-items: center;
-
       border-radius: 10px;
       margin: 0 auto;
-
-
       .border {
         height: 50px;
         width: 100%;
@@ -266,6 +263,12 @@ $contact-bg-color: #0f4166;
           font-size: 16px;
         }
       }
+    }
+  }
+  @media all and ( max-width: 768px ) {
+    background-color: white;
+    .form-subscribe .wrap-input input {
+      background-color: white;
     }
   }
 }
@@ -371,6 +374,12 @@ footer {
       text-transform: uppercase;
       font-weight: 600;
       text-align: center;
+    }
+    @media all and ( max-width: 768px ) {
+      padding: 40px 0;
+      h1 {
+        font-size: 24px;
+      }
     }
 
   }
@@ -495,6 +504,9 @@ footer {
     color: #414141;
     margin-bottom: 70px;
     overflow: hidden;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     h2 {
       margin-bottom: 30px;
@@ -576,7 +588,11 @@ footer {
   }
   @media only screen and (max-width: 768px) {
     .wrap-content {
+      background-color: #f4f6f9;
       padding: 40px 0;
+      h2 {
+        margin-bottom: 20px;
+      }
       .basic-list {
         font-size: 16px;
       }

@@ -506,6 +506,11 @@ body {
           padding: 16px; }
         .stay-updated .form-subscribe .wrap-input input {
           font-size: 16px; } }
+  @media all and (max-width: 768px) {
+    .stay-updated {
+      background-color: white; }
+      .stay-updated .form-subscribe .wrap-input input {
+        background-color: white; } }
 
 .contact {
   background: url("../img/contact-bg.png"), #726bff; }
@@ -574,6 +579,11 @@ footer {
     text-transform: uppercase;
     font-weight: 600;
     text-align: center; }
+  @media all and (max-width: 768px) {
+    .our-brands .title {
+      padding: 40px 0; }
+      .our-brands .title h1 {
+        font-size: 24px; } }
 .our-brands .list-brands {
   padding: 115px 0;
   display: flex;
@@ -666,6 +676,8 @@ footer {
   color: #414141;
   margin-bottom: 70px;
   overflow: hidden; }
+  .our-company .article:last-child {
+    margin-bottom: 0; }
   .our-company .article h2 {
     margin-bottom: 30px;
     font-size: 24px;
@@ -728,7 +740,10 @@ footer {
     margin-bottom: 0; }
 @media only screen and (max-width: 768px) {
   .our-company .wrap-content {
+    background-color: #f4f6f9;
     padding: 40px 0; }
+    .our-company .wrap-content h2 {
+      margin-bottom: 20px; }
     .our-company .wrap-content .basic-list {
       font-size: 16px; }
     .our-company .wrap-content blockquote .text-blockquote {
