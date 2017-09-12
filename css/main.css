@@ -658,7 +658,69 @@ footer {
       width: 100%;
       height: auto; }
 
-.our-company article {
-  color: #414141; }
+.our-company .wrap-content {
+  padding: 80px 0; }
+  .our-company .wrap-content .container {
+    max-width: 680px; }
+.our-company .article {
+  color: #414141;
+  margin-bottom: 70px; }
+  .our-company .article h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600; }
+  .our-company .article img {
+    width: 100%;
+    height: auto; }
+  .our-company .article .basic-list {
+    margin-bottom: 35px; }
+    .our-company .article .basic-list li {
+      list-style: none;
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 20px; }
+      .our-company .article .basic-list li:before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #ff9944;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 9px; }
+  .our-company .article p {
+    margin-bottom: 25px; }
+  .our-company .article blockquote {
+    overflow: hidden;
+    margin: 0 0 45px 0; }
+    .our-company .article blockquote .text-blockquote {
+      padding: 20px 50px;
+      position: relative;
+      margin-bottom: 10px; }
+      .our-company .article blockquote .text-blockquote:before, .our-company .article blockquote .text-blockquote:after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 15px;
+        display: block; }
+      .our-company .article blockquote .text-blockquote:before {
+        background: url("../img/blockquote-start.png") no-repeat 50% 50%;
+        left: 0;
+        top: 0; }
+      .our-company .article blockquote .text-blockquote:after {
+        background: url("../img/blockquote-end.png") no-repeat 50% 50%;
+        right: 0;
+        bottom: 0; }
+    .our-company .article blockquote cite {
+      float: right;
+      font-style: normal;
+      display: inline-block;
+      padding-left: 50px;
+      background: url("../img/cite.png") 0 50% no-repeat; }
+      .our-company .article blockquote cite p {
+        line-height: 1; }
+      .our-company .article blockquote cite span {
+        font-size: 12px; }
 
 /*# sourceMappingURL=main.css.map */
