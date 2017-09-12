@@ -394,10 +394,10 @@ footer {
     li {
       display: block;
       width: 12.5%;
-      margin: 0 auto;
       padding: 15px;
       a {
         display: block;
+        background-color: white;
         margin-left: auto;
         margin-right: auto;
         padding-top: 50%;
@@ -442,19 +442,37 @@ footer {
 
 
 .gadgets-and-tech {
+  padding-top: 80px;
   h2 {
-    padding: 80px 0 55px;
     font-size: 40px;
     font-weight: 600;
     color: #414141;
+    margin-bottom: 50px;
   }
 
   .description-gadgets {
-    padding: 50px 200px;
+    padding: 50px 0;
     border-top: solid 2px #eeeeee;
     border-bottom: solid 2px #eeeeee;
-    font-size: 16px;
-    color: #414141;
+    p {
+      font-size: 16px;
+      color: #414141;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+  }
+  @media only screen and (max-width: 768px) {
+    background-color: #f4f6f9;
+
+    padding-top: 35px;
+    h2 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    .description-gadgets {
+      padding: 25px 0;
+    }
   }
 }
 
