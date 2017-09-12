@@ -119,6 +119,8 @@ header {
     line-height: 27px;
     text-decoration: none;
     font-weight: 600; }
+    .main-nav ul a:hover {
+      color: #5a9dea; }
   .main-nav ul a.active {
     color: #5a9dea; }
 
@@ -137,7 +139,8 @@ header {
       text-transform: uppercase;
       font-weight: 700;
       outline: none;
-      font-family: 'Open Sans', sans-serif; }
+      font-family: 'Open Sans', sans-serif;
+      cursor: pointer; }
 
 .mobile-toggle {
   display: none;
@@ -303,18 +306,24 @@ header {
   border-radius: 6px;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .btn-register {
   background-image: linear-gradient(to right, #5a9dea 0%, #125697 100%);
   padding: 11px 28px;
   color: white; }
+  .btn-register:hover {
+    background-image: linear-gradient(to right, #125697 0%, #5a9dea 100%); }
 
 .btn-login {
   font-size: 14px;
   color: #999999;
   padding: 9px 28px;
   border: solid 2px rgba(9, 153, 153, 0.6); }
+  .btn-login:hover {
+    background-color: rgba(164, 164, 164, 0.1); }
 
 .cta-btn {
   color: white;
@@ -323,12 +332,16 @@ header {
   border-radius: 6px;
   border: none;
   outline: none; }
+  .cta-btn:hover {
+    background-image: linear-gradient(to top, #ffb134 0%, #ff9845 100%); }
 
 .btn-regular {
   color: white;
   padding: 18px 40px;
   border: solid 2px white;
   border-radius: 6px; }
+  .btn-regular:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
 
 @media all and (max-width: 992px) {
   .btn {
@@ -432,7 +445,7 @@ body {
   background: url("../img/money.png") no-repeat 100% 100%, #57cdd7; }
 
 .sell-your-product {
-  background: url("../img/euro.png") no-repeat 100% 100%, #726bff; }
+  background: url("../img/euro.png") no-repeat 100% 100%, #57cdd7; }
 
 .card {
   margin-bottom: 20px;
@@ -517,7 +530,8 @@ body {
     .stay-updated .form-subscribe .wrap-input .cta-btn {
       height: 50px;
       padding: 16px 40px;
-      border-radius: 0 10px 10px 0; }
+      border-radius: 0 10px 10px 0;
+      cursor: pointer; }
   @media all and (max-width: 992px) {
     .stay-updated {
       padding: 60px 0; }
@@ -607,31 +621,36 @@ footer {
       .title-page h1 {
         font-size: 24px; } }
 
-.our-brands, .gadgets-and-tech {
+.content-page {
   padding: 80px 0; }
-  .our-brands h2, .gadgets-and-tech h2 {
+  .content-page h2 {
     font-size: 40px;
     font-weight: 600;
     color: #414141;
     margin-bottom: 50px; }
-  .our-brands .description-gadgets, .gadgets-and-tech .description-gadgets {
+  .content-page .description-gadgets {
     padding: 50px 0;
     border-top: solid 2px #eeeeee;
     border-bottom: solid 2px #eeeeee; }
-    .our-brands .description-gadgets p, .gadgets-and-tech .description-gadgets p {
+    .content-page .description-gadgets p {
       font-size: 16px;
       color: #414141;
       max-width: 680px;
       margin: 0 auto; }
   @media only screen and (max-width: 768px) {
-    .our-brands, .gadgets-and-tech {
-      padding: 35px 0; }
-      .our-brands h2, .gadgets-and-tech h2 {
+    .content-page {
+      padding: 35px 0;
+      background-color: #f4f6f9; }
+      .content-page h2 {
         font-size: 22px;
         margin-bottom: 30px; }
-      .our-brands .description-gadgets, .gadgets-and-tech .description-gadgets {
+      .content-page .description-gadgets {
+        margin: 20px 0;
         padding: 25px 0; } }
-  .our-brands .list-brands, .gadgets-and-tech .list-brands {
+  @media only screen and (max-width: 450px) {
+    .content-page .list-gadgets li {
+      width: 100%; } }
+  .content-page .list-brands {
     padding: 80px 0;
     display: flex;
     justify-content: flex-start;
@@ -639,11 +658,11 @@ footer {
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px; }
-    .our-brands .list-brands li, .gadgets-and-tech .list-brands li {
+    .content-page .list-brands li {
       display: block;
       width: 12.5%;
       padding: 15px; }
-      .our-brands .list-brands li a, .gadgets-and-tech .list-brands li a {
+      .content-page .list-brands li a {
         display: block;
         background-color: white;
         margin-left: auto;
@@ -653,7 +672,7 @@ footer {
         border: solid 1px #bbbbbb;
         border-radius: 4px;
         position: relative; }
-      .our-brands .list-brands li img, .gadgets-and-tech .list-brands li img {
+      .content-page .list-brands li img {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -661,22 +680,19 @@ footer {
         max-width: 90%;
         height: auto; }
     @media all and (max-width: 992px) {
-      .our-brands .list-brands li, .gadgets-and-tech .list-brands li {
+      .content-page .list-brands li {
         width: 16.66%;
         padding: 10px; } }
     @media all and (max-width: 768px) {
-      .our-brands .list-brands, .gadgets-and-tech .list-brands {
+      .content-page .list-brands {
         padding: 0; }
-        .our-brands .list-brands li, .gadgets-and-tech .list-brands li {
+        .content-page .list-brands li {
           width: 25%;
           padding: 10px; } }
     @media all and (max-width: 450px) {
-      .our-brands .list-brands li, .gadgets-and-tech .list-brands li {
+      .content-page .list-brands li {
         width: 33.33%;
         padding: 10px; } }
-  @media all and (max-width: 768px) {
-    .our-brands, .gadgets-and-tech {
-      background-color: #f4f6f9; } }
 
 .list-gadgets {
   display: flex;
@@ -705,8 +721,11 @@ footer {
       transform: translate(-50%, -50%);
       width: 100%;
       height: auto; }
+  @media only screen and (max-width: 768px) {
+    .list-gadgets {
+      margin-bottom: 0; } }
 
-.our-company .wrap-content .container {
+.our-company .container {
   max-width: 680px; }
 .our-company .article {
   color: #414141;
@@ -775,19 +794,16 @@ footer {
   .our-company .article .list-gadgets {
     margin-bottom: 0; }
 @media only screen and (max-width: 768px) {
-  .our-company .wrap-content {
+  .our-company {
     background-color: #f4f6f9; }
-    .our-company .wrap-content h2 {
+    .our-company h2 {
       margin-bottom: 20px; }
-    .our-company .wrap-content .basic-list {
+    .our-company .basic-list {
       font-size: 16px; }
-    .our-company .wrap-content blockquote .text-blockquote {
+    .our-company .article blockquote .text-blockquote {
       padding: 20px; }
-    .our-company .wrap-content .article-wide-img {
+    .our-company .article .article-wide-img {
       height: 150px;
       width: auto; } }
-@media only screen and (max-width: 450px) {
-  .our-company .wrap-content .list-gadgets li {
-    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

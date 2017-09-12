@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800');
 @import '_grid.scss';
-
 @import '_header.scss';
 @import '_buttons.scss';
 
@@ -15,8 +14,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  //font-family: 'Open Sans', sans-serif;
-  //font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -27,8 +24,6 @@ p {
   }
 }
 
-
-
 body {
   padding: 0;
   margin: 0;
@@ -36,11 +31,6 @@ body {
   font-size: 18px;
   color: white;
 }
-
-//.container {
-//  width: 1170px;
-//  margin: 0 auto;
-//}
 
 .section {
   padding: 70px 0;
@@ -87,16 +77,6 @@ body {
   text-align: left;
 }
 
-$green-color: #57cdd7;
-$blue-color: #726bff;
-$footer-color: #001826;
-$gray-bg-color: #f2f2f2;
-$contact-bg-color: #0f4166;
-
-
-
-
-
 .welcome-banner {
   background: linear-gradient(rgba(3, 74, 126, 0.7), rgba(3, 74, 126, 0.7)),  url("../img/banner-bg.jpg") no-repeat 50% 50%;
   background-size: cover;
@@ -115,7 +95,6 @@ $contact-bg-color: #0f4166;
   }
   @media all and ( max-width: 992px ) {
     padding: 60px 0 30px;
-
     .col-1-2 {
       width: 100%;
     }
@@ -136,11 +115,11 @@ $contact-bg-color: #0f4166;
 }
 
 .become-reseller {
-  background: url("../img/money.png") no-repeat 100% 100%, $green-color;
+  background: url("../img/money.png") no-repeat 100% 100%, #57cdd7;
 }
 
 .sell-your-product {
-  background: url("../img/euro.png") no-repeat 100% 100%, $blue-color;
+  background: url("../img/euro.png") no-repeat 100% 100%, #57cdd7;
 }
 
 .card {
@@ -179,18 +158,13 @@ $contact-bg-color: #0f4166;
   }
 }
 
-
-.choice-role {
-
-}
-
 .pimp-device {
   background: linear-gradient(rgba(65, 65, 65, 0.3), rgba(65, 65, 65, 0.3)), url("../img/pimp-devices-bg.png") 50% 50% no-repeat;
   background-size: cover;
 }
 
 .shop-tech-toys {
-  background: url("../img/anim-bg2.png") no-repeat 5% 50%, url("../img/anim-bg3.png") no-repeat 95% 50%, $green-color;
+  background: url("../img/anim-bg2.png") no-repeat 5% 50%, url("../img/anim-bg3.png") no-repeat 95% 50%, #57cdd7;
 }
 
 .gym-ready-accessories {
@@ -199,7 +173,7 @@ $contact-bg-color: #0f4166;
 }
 
 .bluetooth-speakers {
-  background: url("../img/anim-bg2.png") no-repeat 95% 50%, url("../img/anim-bg3.png") no-repeat 5% 50%, $blue-color ;
+  background: url("../img/anim-bg2.png") no-repeat 95% 50%, url("../img/anim-bg3.png") no-repeat 5% 50%, #726bff;
 }
 
 .awesome-gadgets {
@@ -207,7 +181,6 @@ $contact-bg-color: #0f4166;
   background-size: cover;
   h2 span {
     display: block;
-
   }
 }
 
@@ -248,6 +221,7 @@ $contact-bg-color: #0f4166;
         height: 50px;
         padding: 16px 40px;
         border-radius: 0 10px 10px 0;
+        cursor: pointer;
       }
     }
   }
@@ -275,7 +249,7 @@ $contact-bg-color: #0f4166;
 }
 
 .contact {
-  background: url("../img/contact-bg.png"), $blue-color;
+  background: url("../img/contact-bg.png"), #726bff;
   .cta-text-contact {
     padding-right: 25%;
   }
@@ -340,11 +314,8 @@ $contact-bg-color: #0f4166;
   }
 }
 
-
-
-
 footer {
-  background-color: $footer-color;
+  background-color: #001826;
   text-align: center;
   padding: 30px 0;
   p {
@@ -358,11 +329,7 @@ footer {
   background-color: #f0b601;
 }
 
-
-
-
 //our-brands
-
 .title-page {
   background: linear-gradient(rgba(3, 74, 126, 0.8), rgba(3, 74, 126, 0.8)), url("../img/brands-bg.jpg") no-repeat 50% 50%;
   background-size: cover;
@@ -382,7 +349,7 @@ footer {
   }
 }
 
-.our-brands, .gadgets-and-tech {
+.content-page {
   padding: 80px 0;
   h2 {
     font-size: 40px;
@@ -403,18 +370,25 @@ footer {
   }
   @media only screen and (max-width: 768px) {
     padding: 35px 0;
-
+    background-color: #f4f6f9;
     h2 {
       font-size: 22px;
       margin-bottom: 30px;
     }
     .description-gadgets {
+      margin: 20px 0;
       padding: 25px 0;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .list-gadgets {
+      li {
+        width: 100%;
+      }
     }
   }
   .list-brands {
     padding: 80px 0;
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -465,9 +439,6 @@ footer {
       }
     }
   }
-  @media all and ( max-width: 768px ) {
-    background-color: #f4f6f9;
-  }
 }
 
 .list-gadgets {
@@ -500,15 +471,18 @@ footer {
       height: auto;
     }
   }
+  @media only screen and (max-width: 768px) {
+
+      margin-bottom: 0;
+
+  }
+
 }
 
 //
 .our-company {
-  .wrap-content {
-    //padding: 80px 0;
-    .container {
-      max-width: 680px;
-    }
+  .container {
+    max-width: 680px;
   }
   .article {
     color: #414141;
@@ -517,7 +491,6 @@ footer {
     &:last-child {
       margin-bottom: 0;
     }
-
     h2 {
       margin-bottom: 30px;
       font-size: 24px;
@@ -594,39 +567,23 @@ footer {
     .list-gadgets {
       margin-bottom: 0;
     }
-
   }
   @media only screen and (max-width: 768px) {
-    .wrap-content {
-      background-color: #f4f6f9;
-      //padding: 40px 0;
-      h2 {
-        margin-bottom: 20px;
-      }
-      .basic-list {
-        font-size: 16px;
-      }
-      blockquote {
-        .text-blockquote {
-          padding: 20px;
-        }
-      }
-      .article-wide-img {
-        height: 150px;
-        width: auto;
+    background-color: #f4f6f9;
+    h2 {
+      margin-bottom: 20px;
+    }
+    .basic-list {
+      font-size: 16px;
+    }
+    .article blockquote {
+      .text-blockquote {
+        padding: 20px;
       }
     }
-  }
-  @media only screen and (max-width: 450px) {
-    .wrap-content {
-      .list-gadgets {
-        li {
-          width: 100%;
-        }
-      }
+    .article .article-wide-img {
+      height: 150px;
+      width: auto;
     }
   }
 }
-
-
-
