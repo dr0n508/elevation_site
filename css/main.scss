@@ -343,7 +343,7 @@ footer {
 .title-page {
   background: linear-gradient(rgba(3, 74, 126, 0.8), rgba(3, 74, 126, 0.8)), url("../img/brands-bg.jpg") no-repeat 50% 50%;
   background-size: cover;
-  padding: 88px 0 77px;
+  padding: 78px 0 68px;
   h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
@@ -368,6 +368,7 @@ footer {
     margin-bottom: 50px;
   }
   .description-gadgets {
+    margin-bottom: 50px;
     padding: 50px 0;
     border-top: solid 2px #eeeeee;
     border-bottom: solid 2px #eeeeee;
@@ -390,15 +391,9 @@ footer {
       padding: 25px 0;
     }
   }
-  @media only screen and (max-width: 450px) {
-    .list-gadgets {
-      li {
-        width: 100%;
-      }
-    }
-  }
+
   .list-brands {
-    padding: 80px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -451,12 +446,56 @@ footer {
   }
 }
 
+
+.list-product-group {
+  overflow: hidden;
+  li {
+    list-style: none;
+    width: calc((100% - 42px)/3);
+    float: left;
+    margin-right: 20px;
+    height: 150px;
+    overflow: hidden;
+    a {
+      display: block;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      margin-bottom: 20px;
+      .product-group-01,
+      .product-group-02,
+      .product-group-03 {
+        max-width: 280px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .product-group-01 {
+    background: url("../img/gadget01.png") 50% 50% no-repeat;
+    background-size: cover;
+    height: 150px;
+  }
+  .product-group-02 {
+    background: url("../img/gadget02.png") 50% 50% no-repeat;
+    background-size: cover;
+    height: 150px;
+  }
+  .product-group-03 {
+    background: url("../img/gadget03.png") 50% 50% no-repeat;
+    background-size: cover;
+    height: 150px;
+  }
+}
+
 .list-gadgets {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   margin-left: -10px;
   margin-right: -10px;
   li {
@@ -482,11 +521,22 @@ footer {
     }
   }
   @media only screen and (max-width: 768px) {
-
       margin-bottom: 0;
 
   }
-
+  @media only screen and (max-width: 450px) {
+      li {
+        width: 100%;
+        //max-width: 280px;
+        height: 210px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding: 0;
+        a {
+          padding-bottom: 0;
+        }
+      }
+    }
 }
 
 //
