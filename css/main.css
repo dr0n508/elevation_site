@@ -607,14 +607,16 @@ body {
   background-size: cover; }
 
 .shop-tech-toys {
-  background: url("../img/anim-bg2.png") no-repeat 5% 50%, url("../img/anim-bg3.png") no-repeat 95% 50%, #57cdd7; }
+  background: url("../img/anim-bg2.png") no-repeat 5% 50%, url("../img/anim-bg3.png") no-repeat 95% 50%, #57cdd7;
+  background-attachment: fixed; }
 
 .gym-ready-accessories {
   background: linear-gradient(rgba(65, 65, 65, 0.3), rgba(65, 65, 65, 0.3)), url("../img/gym-bg.png") no-repeat 50% 50%;
   background-size: cover; }
 
 .bluetooth-speakers {
-  background: url("../img/anim-bg2.png") no-repeat 95% 50%, url("../img/anim-bg3.png") no-repeat 5% 50%, #726bff; }
+  background: url("../img/anim-bg2.png") no-repeat 95% 50%, url("../img/anim-bg3.png") no-repeat 5% 50%, #726bff;
+  background-attachment: fixed; }
 
 .awesome-gadgets {
   background: linear-gradient(rgba(65, 65, 65, 0.3), rgba(65, 65, 65, 0.3)), url("../img/gadgets-bg.png") no-repeat 50% 50%;
@@ -977,5 +979,24 @@ footer {
     .our-company .article .article-wide-img {
       height: 150px;
       width: auto; } }
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.parallax__layer--base {
+  transform: translateZ(0); }
+
+.parallax__layer--back {
+  transform: translateZ(-1px); }
 
 /*# sourceMappingURL=main.css.map */

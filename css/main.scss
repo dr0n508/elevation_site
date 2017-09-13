@@ -172,6 +172,7 @@ body {
 
 .shop-tech-toys {
   background: url("../img/anim-bg2.png") no-repeat 5% 50%, url("../img/anim-bg3.png") no-repeat 95% 50%, #57cdd7;
+  background-attachment: fixed;
 }
 
 .gym-ready-accessories {
@@ -181,6 +182,7 @@ body {
 
 .bluetooth-speakers {
   background: url("../img/anim-bg2.png") no-repeat 95% 50%, url("../img/anim-bg3.png") no-repeat 5% 50%, #726bff;
+  background-attachment: fixed;
 }
 
 .awesome-gadgets {
@@ -654,6 +656,30 @@ footer {
       width: auto;
     }
   }
+}
+
+
+
+//paralaks
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
 }
 
 
