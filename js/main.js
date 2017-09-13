@@ -70,7 +70,22 @@ $(document).ready(function () {
 
 //clocks
 
+    var currentTimeZone = new Date().getTimezoneOffset()/60;
+    var timeZoneMoscow = 3;
+    var timeZoneKiev = 3;
+    var timeZoneKazahstan = 6;
+
+
+    var changeHoursKiev = currentTimeZone + timeZoneKiev;
+    var changeHoursKazahstan = currentTimeZone + timeZoneKazahstan;
+    var changeHoursMoscow = currentTimeZone + timeZoneMoscow;
+
+    console.log(changeHoursKiev, changeHoursKazahstan, changeHoursMoscow);
+
+
+
     setInterval( function() {
+
         var seconds = new Date().getSeconds();
         var sdegree = seconds * 6;
         var srotate = 'rotate(' + sdegree + 'deg)';
@@ -97,6 +112,9 @@ $(document).ready(function () {
         $('#minute').css({'-moz-transform' : mrotate, '-webkit-transform' : mrotate, '-o-transform' : mrotate});
 
     }, 1000 );
+
+
+
 
 
 
