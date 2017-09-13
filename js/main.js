@@ -75,14 +75,9 @@ $(document).ready(function () {
     var timeZoneKiev = 3;
     var timeZoneKazahstan = 6;
 
-
     var changeHoursKiev = currentTimeZone + timeZoneKiev;
     var changeHoursKazahstan = currentTimeZone + timeZoneKazahstan;
     var changeHoursMoscow = currentTimeZone + timeZoneMoscow;
-
-    console.log(changeHoursKiev, changeHoursKazahstan, changeHoursMoscow);
-
-
 
     setInterval( function() {
 
@@ -90,17 +85,31 @@ $(document).ready(function () {
         var sdegree = seconds * 6;
         var srotate = 'rotate(' + sdegree + 'deg)';
 
-        $('#second').css({'-moz-transform' : srotate, '-webkit-transform' : srotate, '-o-transform' : srotate});
+        $('.second').css({'-moz-transform' : srotate, '-webkit-transform' : srotate, '-o-transform' : srotate});
 
     }, 1000 );
 
     setInterval( function() {
-        var hours = new Date().getHours();
-        var mins = new Date().getMinutes();
-        var hdegree = hours * 30 + (mins / 2);
-        var hrotate = 'rotate(' + hdegree + 'deg)';
 
-        $('#hour').css({'-moz-transform' : hrotate, '-webkit-transform' : hrotate, '-o-transform' : hrotate});
+        var hoursU = new Date().getHours();
+        var mins = new Date().getMinutes();
+        var hdegreeU = hoursU * 30 + (mins / 2);
+        var hrotateU = 'rotate(' + hdegreeU + 'deg)';
+
+
+        var hoursK = new Date().getHours() + changeHoursKazahstan;
+        var hdegreeK = hoursK * 30 + (mins / 2);
+        var hrotateK = 'rotate(' + hdegreeK + 'deg)';
+
+        var hoursM = new Date().getHours() + changeHoursMoscow;
+        var hdegreeM = hoursM * 30 + (mins / 2);
+        var hrotateM = 'rotate(' + hdegreeM + 'deg)';
+
+
+
+        $('#hourUkraine').css({'-moz-transform' : hrotateU, '-webkit-transform' : hrotateU, '-o-transform' : hrotateU});
+        $('#hourKazahstan').css({'-moz-transform' : hrotateK, '-webkit-transform' : hrotateK, '-o-transform' : hrotateK});
+        $('#hourMoscow').css({'-moz-transform' : hrotateM, '-webkit-transform' : hrotateM, '-o-transform' : hrotateM});
 
     }, 1000 );
 
@@ -109,7 +118,7 @@ $(document).ready(function () {
         var mdegree = mins * 6;
         var mrotate = 'rotate(' + mdegree + 'deg)';
 
-        $('#minute').css({'-moz-transform' : mrotate, '-webkit-transform' : mrotate, '-o-transform' : mrotate});
+        $('.minute').css({'-moz-transform' : mrotate, '-webkit-transform' : mrotate, '-o-transform' : mrotate});
 
     }, 1000 );
 

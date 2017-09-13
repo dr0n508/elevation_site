@@ -268,7 +268,9 @@ body {
   .contact-list {
     list-style: none;
     li {
-      padding-top: 80px;
+      .time {
+        margin-bottom: 20px;
+      }
     }
     h3 {
       font-size: 17px;
@@ -286,19 +288,17 @@ body {
     }
   }
   .contact-kazachstan {
-    background: url("../img/clock-kazachstan.png") 0 0 no-repeat;
+    //background: url("../img/clock-kazachstan.png") 0 0 no-repeat;
   }
   .contact-ukraine {
     //background: url("../img/clock-ukraine.png") 0 0 no-repeat;
     padding-top: 0 !important;
-    #time {
-      margin-bottom: 20px;
-    }
+
 
 
   }
   .contact-russia {
-    background: url("../img/clock-russia.png") 0 0 no-repeat;
+    //background: url("../img/clock-russia.png") 0 0 no-repeat;
   }
   @media all and ( max-width: 992px ) {
     .col-1-2 {
@@ -308,14 +308,19 @@ body {
       padding-right: 0;
     }
     .contact-list {
+      li {
+        .time {
+          margin: 0 auto 20px auto;
+        }
+      }
       h3, .email, .phone {
         text-align: center;
       }
-      .contact-kazachstan,
-      .contact-ukraine,
-      .contact-russia {
-        background-position: 50% 0 ;
-      }
+      //.contact-kazachstan,
+      //.contact-ukraine,
+      //.contact-russia {
+      //  background-position: 50% 0 ;
+      //}
     }
   }
   @media all and ( max-width: 768px ) {
