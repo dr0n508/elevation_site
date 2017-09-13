@@ -98,22 +98,22 @@ $(document).ready(function () {
 
         }, 1000 );
 
-        for (i=1;i<=6;i++) {
-            $('#center').before('<div id="l'+i+'"></div>');
-        }
-        for (i=1;i<=30;i++) {
-            $('#center').before('<div id="ln'+i+'"></div>');
-            $('#ln'+i).css({
-                "-moz-transform" : "rotate(" + i*6 + "deg)",
-                "-webkit-transform" : "rotate(" + i*6 + "deg)",
-                "-o-transform" : "rotate(" + i*6 + "deg)",
-                "padding" : "60px 1px 60px 0",
-                "left" : "60px",
-                "position" : "absolute",
-                "display" : "block",
-                "content" : "",
-            });
-        }
+        // for (i=1;i<=6;i++) {
+        //     $('#center').before('<div id="l'+i+'"></div>');
+        // }
+        // for (i=1;i<=30;i++) {
+        //     $('#center').before('<div id="ln'+i+'"></div>');
+        //     $('#ln'+i).css({
+        //         "-moz-transform" : "rotate(" + i*6 + "deg)",
+        //         "-webkit-transform" : "rotate(" + i*6 + "deg)",
+        //         "-o-transform" : "rotate(" + i*6 + "deg)",
+        //         "padding" : "60px 1px 60px 0",
+        //         "left" : "60px",
+        //         "position" : "absolute",
+        //         "display" : "block",
+        //         "content" : "",
+        //     });
+        // }
     });
 
 
