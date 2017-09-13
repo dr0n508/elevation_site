@@ -407,11 +407,6 @@ header {
 
   .btn-regular {
     padding: 13px; } }
-* {
-  margin: 0;
-  padding: 0;
-  font: 16px Arial, serif; }
-
 #time {
   position: relative;
   display: block;
@@ -422,13 +417,12 @@ header {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #ccc;
-  margin: 20px auto;
-  border: 1px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%; }
 
 #center {
   position: absolute;
-  left: 27px;
+  left: 26px;
   top: 27px;
   content: "";
   padding: 3px;
@@ -448,30 +442,30 @@ header {
   content: ""; }
 
 #second {
-  left: 30px;
+  left: 28px;
   z-index: 4; }
 
 #second:after {
-  top: -10px;
-  padding: 20px 1px 20px 0px;
+  top: 3px;
+  padding: 6px 1px 20px 0px;
   background: white; }
 
 #minute {
-  left: 30px;
+  left: 29px;
   z-index: 3; }
 
 #minute:after {
-  top: 0px;
-  padding: 15px 1px;
+  top: 10px;
+  padding: 10px 1px;
   background: white; }
 
 #hour {
-  left: 29px;
+  left: 27px;
   z-index: 2; }
 
 #hour:after {
-  top: 10px;
-  padding: 10px 2px 10px 1px;
+  top: 15px;
+  padding: 5px 2px 10px 1px;
   border-radius: 2px 2px 0 0;
   background: white; }
 
@@ -703,7 +697,9 @@ body {
   .contact .contact-kazachstan {
     background: url("../img/clock-kazachstan.png") 0 0 no-repeat; }
   .contact .contact-ukraine {
-    background: url("../img/clock-ukraine.png") 0 0 no-repeat; }
+    padding-top: 0 !important; }
+    .contact .contact-ukraine #time {
+      margin-bottom: 20px; }
   .contact .contact-russia {
     background: url("../img/clock-russia.png") 0 0 no-repeat; }
   @media all and (max-width: 992px) {

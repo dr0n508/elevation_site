@@ -287,7 +287,13 @@ body {
     background: url("../img/clock-kazachstan.png") 0 0 no-repeat;
   }
   .contact-ukraine {
-    background: url("../img/clock-ukraine.png") 0 0 no-repeat;
+    //background: url("../img/clock-ukraine.png") 0 0 no-repeat;
+    padding-top: 0 !important;
+    #time {
+      margin-bottom: 20px;
+    }
+
+
   }
   .contact-russia {
     background: url("../img/clock-russia.png") 0 0 no-repeat;
