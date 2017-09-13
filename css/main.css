@@ -71,7 +71,6 @@ header {
   background-color: white;
   z-index: 999;
   width: 100%;
-  overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 1; }
@@ -299,6 +298,59 @@ header {
 
   .main-nav ul li {
     text-align: left; } }
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 140px;
+  z-index: 100; }
+
+.dropbtn.ru {
+  background: url("http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png") no-repeat 5px center; }
+
+.dropbtn.eng {
+  background: url("http://www.miru-mir.info/images/en.gif") no-repeat 5px center; }
+
+.dropbtn {
+  padding: 10px 0 10px 25px;
+  cursor: pointer;
+  color: #429fcb;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700; }
+  .dropbtn:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #cecece transparent transparent transparent;
+    position: absolute;
+    right: -15px;
+    top: 15px; }
+
+.dropdown-content a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #444444;
+  padding: 10px 0 10px 25px;
+  text-decoration: none;
+  display: block; }
+  .dropdown-content a:first-child {
+    background: url("http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png") no-repeat 5px center; }
+  .dropdown-content a:last-child {
+    background: url("http://www.miru-mir.info/images/en.gif") no-repeat 5px center; }
+  .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+
 .btn {
   display: inline-block;
   text-transform: uppercase;
@@ -321,7 +373,7 @@ header {
   font-size: 14px;
   color: #999999;
   padding: 9px 28px;
-  border: solid 2px rgba(9, 153, 153, 0.6); }
+  border: solid 2px #999999; }
   .btn-login:hover {
     background-color: rgba(164, 164, 164, 0.1); }
 

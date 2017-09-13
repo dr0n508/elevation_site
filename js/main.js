@@ -50,6 +50,26 @@ $(document).ready(function () {
         }
     });
 
+//language
+
+    $('.dropbtn').click(function() {
+            $('.dropdown-content').toggle();
+    });
+
+    $('#en').click(function() {
+        $('.dropbtn').removeClass('ru eng').addClass('eng').text( 'ENG');
+        $('.dropdown-content').toggle();
+    });
+
+    $('#ru').click(function() {
+        console.log('click');
+        $('.dropbtn').removeClass('ru eng').addClass('ru').text( 'RU');
+        $('.dropdown-content').toggle();
+    });
+
+
+
+
 
 
 

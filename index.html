@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/main.css?v3">
+    <link rel="stylesheet" href="css/main.css?v4">
 </head>
 <body>
 
@@ -26,6 +26,7 @@
 
     <div class="nav">
         <nav class="main-nav">
+
             <div class="show-mobile">
                 <div class="wrap-btn-language">
                     <a href="#" class="active">EN</a>
@@ -43,13 +44,15 @@
         </nav>
 
         <div class="sign-nav">
-            <form action="#" class="hide-mobile">
-                <select name="language-site" id="language-site">
-                    <option value="eng">eng</option>
-                    <option value="ru">ru</option>
-                    <option value="ua">ua</option>
-                </select>
-            </form>
+
+                <div class="dropdown hide-mobile">
+                    <div class="dropbtn eng">ENG</div>
+                    <div class="dropdown-content">
+                        <a href="#" id="ru">RU</a>
+                        <a href="#" id="en">ENG</a>
+                    </div>
+                </div>
+
 
             <a href="#" class="btn btn-login">Login</a>
             <a href="#" class="btn btn-register">Register</a>
