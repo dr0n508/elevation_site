@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    new WOW().init();
+
     maintainSameHeight($('[data-same-height="card"]'));
 
     function maintainSameHeight($list) {
