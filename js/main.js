@@ -57,13 +57,12 @@ $(document).ready(function () {
     });
 
     $('#en').click(function() {
-        $('.dropbtn').removeClass('ru eng').addClass('eng').text( 'ENG');
+        $('.dropbtn').text( 'ENG');
         $('.dropdown-content').toggle();
     });
 
     $('#ru').click(function() {
-        console.log('click');
-        $('.dropbtn').removeClass('ru eng').addClass('ru').text( 'RU');
+        $('.dropbtn').text( 'RU');
         $('.dropdown-content').toggle();
     });
 
